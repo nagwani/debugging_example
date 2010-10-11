@@ -6,8 +6,9 @@
  */
 
 
-//function fail_init() {
-//  if (arg(0) == 'node') {
-//    drupal_set_message('this is a test of an argument %argument', array('%argument' => 'no contest'));
-//  }
-//}
+function fail_init() {
+  if (arg(0) == 'node') {
+    drupal_set_message('this is a test of an argument %argument', array('%argument' => 'no contest'));
+  }
+  watchdog('Tell somebody it is broken', array('%broken' => 'broken'), 'This is not working %arg', 'should be the arg');
+}
