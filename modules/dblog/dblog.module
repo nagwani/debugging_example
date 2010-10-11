@@ -133,8 +133,8 @@ function dblog_watchdog(array $log_entry) {
   drupal_set_message($message);
   // END DEBUG
 
-
-
+  // OR.... If using devel
+  dsm(debug_backtrace(), 'Backtrace from dblog_watchdog()');
 
   Database::getConnection('default', 'default')->insert('watchdog')
     ->fields(array(
