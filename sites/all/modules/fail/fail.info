@@ -1,0 +1,5 @@
+; $Id$
+name = Fail
+description = This module causes some failures
+core = 7.x
+files[] = fail.module

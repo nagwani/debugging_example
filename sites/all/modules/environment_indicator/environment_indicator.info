@@ -1,0 +1,14 @@
+; $Id: environment_indicator.info,v 1.2 2009/12/12 17:52:04 mrfelton Exp $
+name = Environment Indicator
+description = Adds a coloured strip to the side of the site informing the user which environemnt they are in (Development, Staging Production etc).
+package = Administration
+core = 7.x
+files[] = environment_indicator.module
+files[] = environment_indicator.install
+
+; Information added by drupal.org packaging script on 2009-12-12
+version = "7.x-1.0-alpha1"
+core = "7.x"
+project = "environment_indicator"
+datestamp = "1260641119"
+

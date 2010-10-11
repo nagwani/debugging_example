@@ -1,0 +1,13 @@
+; $Id: admin_devel.info,v 1.3 2010/03/15 23:02:51 sun Exp $
+name = Administration Development tools
+description = Administration and debugging functionality for developers and site builders.
+package = Administration
+core = 7.x
+files[] = admin_devel.module
+
+; Information added by drupal.org packaging script on 2010-07-29
+version = "7.x-3.x-dev"
+core = "7.x"
+project = "admin_menu"
+datestamp = "1280361641"
+

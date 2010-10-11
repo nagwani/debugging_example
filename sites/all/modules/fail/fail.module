@@ -1,0 +1,13 @@
+<?php
+// $Id$
+/**
+ * @file fail.module
+ * Designed to create failures we can debug.
+ */
+
+
+//function fail_init() {
+//  if (arg(0) == 'node') {
+//    drupal_set_message('this is a test of an argument %argument', array('%argument' => 'no contest'));
+//  }
+//}
