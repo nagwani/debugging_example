@@ -748,6 +748,10 @@ function module_invoke_all() {
   foreach (module_implements($hook) as $module) {
     $function = $module . '_' . $hook;
     if (function_exists($function)) {
+      // Add debug code if we're about to call hook_cron().
+      if ($hook == 'cron') {
+        watchdog('debug', 'Calling function %function', array('%function' => $function));
+      } 
       $result = call_user_func_array($function, $args);
       if (isset($result) && is_array($result)) {
         $return = array_merge_recursive($return, $result);
